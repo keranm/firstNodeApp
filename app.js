@@ -1,6 +1,8 @@
 /*
  * Module dependencies
  */
+var port = process.env.PORT || 8888;
+
 var express = require('express')
   , stylus = require('stylus')
   , nib = require('nib')
@@ -26,4 +28,4 @@ app.get('/', function (req, res) {
   { title : 'Home' }
   )
 })
-app.listen(3000)
+app.listen(port)
